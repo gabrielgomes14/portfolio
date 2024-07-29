@@ -182,22 +182,22 @@ export const DATA = {
     },
   ],
   hackathons: [
+        {
+      title: "Bachelor of Information Systems",
+      dates: "January 2023 - December 2026 (In progress)",
+      location: "Instituto Federal Catarinense, Araquari",
+      description:
+        "In the Information Systems Course, which I am currently graduating from the Federal Institute Catarinense – Araquari Campus, I acquire the knowledge of planning, acquisition and management of Information Technology and Computing services and resources applied to the development and development of the evolution of systems and infrastructures for the automation of organizational processes.",
+      image:
+        "https://th.bing.com/th/id/OIP.I6NK72FR1sZ9Pf0xnV6CqQAAAA?rs=1&pid=ImgDetMain",
+      links: [],
+    },
     {
       title: "Information Technology",
       dates: "January 2020 - February 2022",
       location: "Instituto Federal Catarinense, Araquari",
       description:
         "During my Technical Course in Computer Science Integrated with High School, which I completed at the Federal Institute of Santa Catarina - Campus Araquari, I acquired knowledge in programming, requirements analysis for system development, and computer maintenance.",
-      image:
-        "https://th.bing.com/th/id/OIP.I6NK72FR1sZ9Pf0xnV6CqQAAAA?rs=1&pid=ImgDetMain",
-      links: [],
-    },
-    {
-      title: "Bachelor of Information Systems",
-      dates: "January 2023 - December 2026 (In progress)",
-      location: "Instituto Federal Catarinense, Araquari",
-      description:
-        "In the Information Systems Course, which I am currently graduating from the Federal Institute Catarinense – Araquari Campus, I acquire the knowledge of planning, acquisition and management of Information Technology and Computing services and resources applied to the development and development of the evolution of systems and infrastructures for the automation of organizational processes.",
       image:
         "https://th.bing.com/th/id/OIP.I6NK72FR1sZ9Pf0xnV6CqQAAAA?rs=1&pid=ImgDetMain",
       links: [],
