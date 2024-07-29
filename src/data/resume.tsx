@@ -207,7 +207,7 @@ export const DATA = {
       dates: "Verification issued in 2022",
       location: "Cisco Networking Academy",
       description:
-        "Developed a mobile application which communcicates a victims medical data from inside an ambulance to doctors at hospital.",
+        "",
       icon: "public",
       image:
         "https://www.onlinecoursereport.com/wp-content/uploads/2020/09/Cisco-Logo-2-e1571393703762.png",
@@ -224,7 +224,7 @@ export const DATA = {
       dates: "Verification issued in 2023",
       location: "Cisco Networking Academy",
       description:
-        "Developed a web application which aggregates social media data regarding cryptocurrencies and predicts future prices.",
+        "",
       image:
         "https://www.onlinecoursereport.com/wp-content/uploads/2020/09/Cisco-Logo-2-e1571393703762.png",
       links: [
