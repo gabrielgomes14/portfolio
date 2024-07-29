@@ -9,6 +9,7 @@ export const DATA = {
   summary:
     "Currently, I am always looking to expand my knowledge and skills, with the aim of enriching my professional experience and contributing to technological development in different sectors.Outside of work, I enjoy exploring new technologies, reading books, and playing video games.",
   avatarUrl: "/me.png",
+  url: "tthps://github.com/ggg21on", 
   skills: [
     "React",
     "Vue.js",
