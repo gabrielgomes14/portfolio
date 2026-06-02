@@ -70,9 +70,66 @@
     * {
       @apply border-border;
     }
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       @apply bg-background text-foreground;
     }
+  }
+
+  @layer components {
+    /* Padrão de grade usado no fundo animado */
+    .bg-grid-pattern {
+      background-image:
+        linear-gradient(to right, hsl(var(--foreground) / 0.07) 1px, transparent 1px),
+        linear-gradient(to bottom, hsl(var(--foreground) / 0.07) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    /* Texto com gradiente animado */
+    .text-gradient-animated {
+      @apply bg-clip-text text-transparent;
+      background-image: linear-gradient(
+        to right,
+        hsl(var(--foreground)),
+        #8b5cf6,
+        #0ea5e9,
+        hsl(var(--foreground))
+      );
+      background-size: 200% auto;
+      @apply animate-gradient;
+    }
+  }
+
+  @layer utilities {
+    /* Respeita usuários que preferem menos movimento */
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  }
+
+  /* Barra de rolagem personalizada */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--muted-foreground) / 0.35);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--muted-foreground) / 0.6);
   }
 
   h3 code {

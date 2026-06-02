@@ -24,9 +24,9 @@ export function EducationCard({
   links,
 }: Props) {
   return (
-    <li className="relative ml-10 py-4">
-      <div className="absolute -left-16 top-2 flex items-center justify-center bg-white rounded-full">
-        <Avatar className="border size-12 m-auto">
+    <li className="group relative ml-10 py-4 transition-colors duration-300">
+      <div className="absolute -left-16 top-2 flex items-center justify-center rounded-full bg-background ring-2 ring-background">
+        <Avatar className="border size-12 m-auto transition-transform duration-300 group-hover:scale-110">
           <AvatarImage src={image} alt={title} className="object-contain" />
           <AvatarFallback>{title[0]}</AvatarFallback>
         </Avatar>
@@ -35,7 +35,9 @@ export function EducationCard({
         {dates && (
           <time className="text-xs text-muted-foreground">{dates}</time>
         )}
-        <h2 className="font-semibold leading-none">{title}</h2>
+        <h2 className="font-semibold leading-none transition-colors duration-300 group-hover:text-primary">
+          {title}
+        </h2>
         {location && (
           <p className="text-sm text-muted-foreground">{location}</p>
         )}
@@ -48,8 +50,12 @@ export function EducationCard({
       {links && links.length > 0 && (
         <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
           {links?.map((link, idx) => (
-            <Link href={link.href} key={idx}>
-              <Badge key={idx} title={link.title} className="flex gap-2">
+            <Link href={link.href} key={idx} target="_blank">
+              <Badge
+                key={idx}
+                title={link.title}
+                className="flex gap-2 hover:-translate-y-0.5 hover:shadow-md"
+              >
                 {link.icon}
                 {link.title}
               </Badge>
